@@ -38,7 +38,6 @@
             this.cmbRecordingDevices = new System.Windows.Forms.ComboBox();
             this.lblDevice = new System.Windows.Forms.Label();
             this.ntfyIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.saveRecording = new System.Windows.Forms.SaveFileDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -87,12 +86,6 @@
             resources.ApplyResources(this.ntfyIcon, "ntfyIcon");
             this.ntfyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.OnNotifyIcon_Click);
             // 
-            // saveRecording
-            // 
-            this.saveRecording.DefaultExt = "wav";
-            this.saveRecording.FileName = "Voice Recording";
-            resources.ApplyResources(this.saveRecording, "saveRecording");
-            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
@@ -130,7 +123,6 @@
         private System.Windows.Forms.ComboBox cmbRecordingDevices;
         private System.Windows.Forms.Label lblDevice;
         private System.Windows.Forms.NotifyIcon ntfyIcon;
-        private System.Windows.Forms.SaveFileDialog saveRecording;
         private System.Windows.Forms.Label label1;
     }
 }

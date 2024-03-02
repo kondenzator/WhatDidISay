@@ -1,3 +1,20 @@
+## Changes compared to the original repository:
+
+Functionality:
+
+* it stores the recorded audio without asking where to save (desktop -> WhatDidISay -> recorded_*.wav)
+* not only inputs but also the system audio output can be selected to be recorded
+* next to clicking on the tray icon, a keyboard shortcut can be also used to trigger saving
+
+Under the hood:
+
+* .NET framework is updated to 4.8
+* dependencies are updated to the latest versions
+* a little bit of thread safety
+* it seems that global hotkey doesn't work if the program is not visible in taskbar
+
+All the below description is from the original repository
+
 # What did I say?
 This software records *n* minutes of audio in the background without saving it on disk, so you can run it 24/7 without ruining your hard drive or SSD. Once you ask yourself "What did I say?", you can save the last *n* minutes to disk.
 
